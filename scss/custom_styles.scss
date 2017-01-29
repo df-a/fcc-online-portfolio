@@ -1,0 +1,114 @@
+/* GENERAL */
+/* GENERAL */
+/* GENERAL */
+.wrap {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+/* NAV-DESKTOP */
+/* NAV-DESKTOP */
+/* NAV-DESKTOP */
+
+.nav-desktop{
+  background-color: #222;
+  height: 80px;
+  padding: 0;
+}
+
+.site-logo {
+  color: white;
+  line-height: 80px;
+}
+
+.nav-desktop .menu-desktop {
+  line-height: 80px;
+  background-color: transparent;
+}
+
+.nav-desktop a {
+  display: inline-block;
+}
+
+.menu > li > a {
+  display: inline-block;
+  line-height: 80px;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: white;
+}
+
+.menu > li > a:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+/* HERO */
+/* HERO */
+/* HERO */
+
+.hero {
+  background-image: url('/assets/images/background/cup-mug-desk-office.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 5em;
+  background-color: #998;
+}
+
+.hero  h1 span {
+  display: inline;
+  padding: 0.2em 0.4em;
+  background-color: rgba(255,255,255,0.8);
+  color: black;
+}
+
+.hero p {
+  width: 70%;
+}
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
+footer {
+  background-color: #222;
+  padding: 80px 0 80px 0;
+}
+
+footer h4 {
+  color: rgba(255,255,255,0.8);
+  font-size: 1.3em;
+}
+
+footer hr {
+  border-color: rgba(255,255,255,0.1);
+  margin: 5px 0;
+}
+
+footer a {
+  display: block;
+  color: rgba(255,255,255,0.6);
+}
+
+footer span {
+  display: block;
+  font-weight: bold;
+  color: rgba(255,255,255,0.6);
+}
+
+
+
+/* MEDIA QUERY */
+/* MEDIA QUERY */
+/* MEDIA QUERY */
+
+@media (max-width: 639px) {
+  .nav-desktop {
+    display: none;
+  }
+}
+
+
+
