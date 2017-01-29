@@ -18,7 +18,11 @@ html(class="no-js" lang="en")
         .off-canvas.position-left(id="offCanvas" data-off-canvas)
         // SITE MAIN CONTENT
         .off-canvas-content(data-off-canvas-content)
-          button.button(type="button" data-toggle="offCanvas") Open Menu
+          //- button.button(type="button" data-toggle="offCanvas") Open Menu
+          .title-bar
+            .title-bar-left
+              button.menu-icon(type="button" data-open="offCanvas")
+              span.title-bar-title David Felix: Portfolio
           include main-content.pug
 
   script(src="bower_components/jquery/dist/jquery.js")
