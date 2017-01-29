@@ -9,35 +9,70 @@ html(class="no-js" lang="en")
   body
     
     // DESKTOP NAVIGATION
-    nav.top-bar.row
-      .top-bar-left
-        h3 David Felix
-      .top-bar-right
-        ul.menu
-          li: a.button(href="#services" alt="Services") Services
-          li: a.button(href="#portfolio" alt="Portfolio") Portfolio
-          li: a.button(href="#about" alt="About") About
-          li: a.button(href="#contact" alt="Contact") Contact
+    nav.top-bar.row.wrap
+      .wrap.row
+        .top-bar-left
+          h3 David Felix
+        .top-bar-right
+          ul.menu
+            li: a.button(href="#services" alt="Services") Services
+            li: a.button(href="#portfolio" alt="Portfolio") Portfolio
+            li: a.button(href="#about" alt="About") About
+            li: a.button(href="#contact" alt="Contact") Contact
 
     // HERO SECTION
     section.hero#services
-      h1 DF: Services
-      p Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
-      p Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.
-
-
-
+        .wrap.row
+          h1 DF: Services
+          hr
+          p Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
+          p Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.
+    
     // PORTFOLIO
     section.portfolio#portfolio
-      h1 DF: Portfolio
+      .wrap.row
+        h1 DF: Portfolio
+        hr
+        article.row
+          .small-12.medium-6.column
+          .small-12.medium-6.column
 
     // ABOUT
     section.about#about
-      h1 DF: About Me
+      .wrap.row
+        h1 DF: About Me
+        hr
 
     // CONTACT
     section.contact#contact
-      h1 DF: Contact
+      .wrap.row
+        h1 DF: Contact
+        hr
+
+    // FOOTER
+    section.footer#footer
+      .wrap.row.small-up-1.medium-up-3
+        h1 DF: Footer
+        hr
+        .column
+          h4 Contact Info
+          hr
+          span Phone: +18005555555
+          span Email: acme@acmemade.com
+        .column
+          h4 Site Map
+          hr
+          a.button(href="#services" alt="Services") Services
+          a.button(href="#portfolio" alt="Portfolio") Portfolio
+          a.button(href="#about" alt="About") About
+          a.button(href="#contact" alt="Contact") Contact
+        .column
+          h4 Social Media
+          hr
+          a.button(href="https://github.com/df-a" alt="Github") Github
+          a.button(href="https://github.com/df-a" alt="Linked.in") Linked.in
+          a.button(href="https://github.com/df-a" alt="Twitter") Twitter
+          a.button(href="https://github.com/df-a" alt="Google Plus") Google Plus
 
   script(src="bower_components/jquery/dist/jquery.js")
   script(src="bower_components/what-input/dist/what-input.js")
