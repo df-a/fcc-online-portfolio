@@ -16,10 +16,14 @@ html(class="no-js" lang="en")
 
         // OFF CANVAS MENU
         .off-canvas.position-left(id="offCanvas" data-off-canvas)
+          li: a(href="#services" alt="Services") Services
+          li: a(href="#portfolio" alt="Portfolio") Portfolio
+          li: a(href="#about" alt="About") About
+          li: a(href="#contact" alt="Contact") Contact
         // SITE MAIN CONTENT
         .off-canvas-content(data-off-canvas-content)
           //- button.button(type="button" data-toggle="offCanvas") Open Menu
-          .title-bar
+          .title-bar.show-for-small-only
             .title-bar-left
               button.menu-icon(type="button" data-open="offCanvas")
               span.title-bar-title David Felix: Portfolio

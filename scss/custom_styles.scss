@@ -1,3 +1,36 @@
+// COLORS
+// COLORS
+// COLORS
+
+$foundation-palette: (
+  primary: #1779ba,
+  secondary: #767676,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+);
+
+
+// $colors: (
+//   general: #BD66A7,
+//   sexy: #F082D4,
+//   sexier: #703D64,
+//   dark: #705F6C,
+//   glamour: #F02A52,
+//   sky: #F2CCE9
+// );
+
+
+@function color($key) {
+  @if map-has-key($foundation-palette, $key) {
+    @return map-get($foundation-palette, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
+
+
 /* GENERAL */
 /* GENERAL */
 /* GENERAL */
@@ -5,6 +38,46 @@
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
+}
+
+
+/* NAV-MOBILE */
+/* NAV-MOBILE */
+/* NAV-MOBILE */
+
+.title-bar {
+  background-color: color(primary);
+  height: 60px;
+  padding: 17px;
+}
+
+.title-bar-title {
+    padding-left: 0.5em;
+}
+
+#offCanvas {
+  background-color: color(secondary);
+  padding-left: 2em;
+  padding-top: 1em;
+  // color: $alert-color;
+  list-style: none;
+}
+
+#offCanvas a {
+  color: rgba(255,255,255,0.6);
+  font-weight: bold;
+  line-height: 2;
+}
+
+#offCanvas a:hover {
+  color: rgba(255,255,255,0.8);
+  font-weight: bold;
+  line-height: 2;
+}
+
+
+.js-off0canvas-exit {
+  color: rgba(0,0,0,0.5);
 }
 
 
@@ -53,7 +126,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  padding: 5em;
+  padding: 1em;
   background-color: #998;
 }
 
@@ -61,11 +134,12 @@
   display: inline;
   padding: 0.2em 0.4em;
   background-color: rgba(255,255,255,0.8);
-  color: black;
 }
 
 .hero p {
   width: 70%;
+  background-color: rgba(255,255,255,0.8);
+  padding: 0.2em 0.4em;
 }
 
 /* FOOTER */
@@ -99,7 +173,6 @@ footer span {
 }
 
 
-
 /* MEDIA QUERY */
 /* MEDIA QUERY */
 /* MEDIA QUERY */
@@ -107,6 +180,13 @@ footer span {
 @media (max-width: 639px) {
   .nav-desktop {
     display: none;
+  }
+}
+
+@media (max-width: 875px) {
+  .hero h1,
+  .hero p {
+    width: 100%;
   }
 }
 
