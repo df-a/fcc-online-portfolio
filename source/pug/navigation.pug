@@ -6,16 +6,17 @@ mixin off-canvas
   li: a(href="#contact" alt="Contact") Contact
 
 mixin top-bar
-  nav.top-bar.nav-desktop
-    .wrap
-      .top-bar-left
-        h3.site-logo David Felix
-      .top-bar-right
-        ul.menu.menu-desktop
-          li: a(href="#services" alt="Services") Services
-          li: a(href="#portfolio" alt="Portfolio") Portfolio
-          li: a(href="#about" alt="About") About
-          li: a(href="#contact" alt="Contact") Contact
+  nav.top-bar.nav-desktop(data-sticky-container)
+    .title-bar(data-sticky data-options="marginTop:-1;" style="width:100%")
+      .wrap
+        .top-bar-left
+          h3.site-logo David Felix
+        .top-bar-right
+          ul.menu.menu-desktop
+            li: a(href="#services" alt="Services") Services
+            li: a(href="#portfolio" alt="Portfolio") Portfolio
+            li: a(href="#about" alt="About") About
+            li: a(href="#contact" alt="Contact") Contact
 
 mixin footer
   footer.footer#footer

@@ -10,19 +10,19 @@ include pug/hero
 include pug/portfolio
 
 // ABOUT
-section.about#about
+a.anchor#about
+section.about
   .wrap.row
-    h1 DF: About Me
+    h2 DF: About Me
     hr
 
 // CONTACT
-section.contact#contact
+a.anchor#contact
+section.contact
   .wrap.row
-    h1 DF: Contact
+    h2 DF: Contact
     hr
     include pug/contact
 
 // FOOTER
 +footer
-.footer
-  <script>document.write(new Date().getFullYear())</script>. All Rights Reversed

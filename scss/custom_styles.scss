@@ -53,8 +53,12 @@ $foundation-palette: (
 
 .title-bar {
   background-color: color(sexy);
-  height: 60px;
+  height: 6em;
   padding: 17px;
+}
+
+.title-bar.show-for-small-only {
+  height: 3.5em;
 }
 
 .title-bar-title {
@@ -93,13 +97,25 @@ $foundation-palette: (
 
 .nav-desktop{
   background-color: color(sexy);
-  height: 80px;
+  height: 120px;
   padding: 0;
+}
+
+img.spaced {
+  margin: 2em auto;
+  padding: 2em;
 }
 
 .site-logo {
   color: white;
   line-height: 80px;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -5em;
+    visibility: hidden;
 }
 
 .nav-desktop .menu-desktop {
