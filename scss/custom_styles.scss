@@ -8,6 +8,12 @@ $foundation-palette: (
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
+  general: #BD66A7,
+  sexy: #F082D4,
+  sexier: #703D64,
+  dark: #705F6C,
+  glamour: #F02A52,
+  sky: #F2CCE9
 );
 
 
@@ -26,7 +32,7 @@ $foundation-palette: (
     @return map-get($foundation-palette, $key);
   }
 
-  @warn "Unknown `#{$key}` in $colors.";
+  @warn "Unknown `#{$key}` in $foundation-palette.";
   @return null;
 }
 
@@ -46,7 +52,7 @@ $foundation-palette: (
 /* NAV-MOBILE */
 
 .title-bar {
-  background-color: color(primary);
+  background-color: color(sexy);
   height: 60px;
   padding: 17px;
 }
@@ -86,7 +92,7 @@ $foundation-palette: (
 /* NAV-DESKTOP */
 
 .nav-desktop{
-  background-color: #222;
+  background-color: color(sexy);
   height: 80px;
   padding: 0;
 }
@@ -130,7 +136,7 @@ $foundation-palette: (
   background-color: #998;
 }
 
-.hero  h1 span {
+.hero h2 span {
   display: inline;
   padding: 0.2em 0.4em;
   background-color: rgba(255,255,255,0.8);
@@ -147,7 +153,7 @@ $foundation-palette: (
 /* FOOTER */
 
 footer {
-  background-color: #222;
+  background-color: color(secondary);
   padding: 80px 0 80px 0;
 }
 

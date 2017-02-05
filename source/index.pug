@@ -1,12 +1,9 @@
+include pug/navigation
+include pug/head
+
 doctype html
 html(class="no-js" lang="en")
-  head
-    meta(charset="utf-8")
-    meta(http-equiv="x-ua-compatible" content="ie=edge")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title David Felix: I make things better
-    link(rel="stylesheet" href="css/app.css")
-    link(rel="stylesheet" href="css/custom_styles.css")
+  +head
   body
 
     // OFF CANVAS MENU & SITE MAIN CONTENT WRAPPERS
@@ -16,15 +13,12 @@ html(class="no-js" lang="en")
 
         // OFF CANVAS MENU
         .off-canvas.position-left(id="offCanvas" data-off-canvas)
-          li: a(href="#services" alt="Services") Services
-          li: a(href="#portfolio" alt="Portfolio") Portfolio
-          li: a(href="#about" alt="About") About
-          li: a(href="#contact" alt="Contact") Contact
+          +off-canvas
         // SITE MAIN CONTENT
-        .off-canvas-content(data-off-canvas-content)
+        .off-canvas-content.data-sticky-container(data-off-canvas-content)
           //- button.button(type="button" data-toggle="offCanvas") Open Menu
           .title-bar.show-for-small-only
-            .title-bar-left
+            .title-bar-left.data-sticky
               button.menu-icon(type="button" data-open="offCanvas")
               span.title-bar-title David Felix: Portfolio
           include main-content.pug

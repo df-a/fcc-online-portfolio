@@ -1,0 +1,46 @@
+//- OFF CANVAS MENU
+mixin off-canvas
+  li: a(href="#services" alt="Services") Services
+  li: a(href="#portfolio" alt="Portfolio") Portfolio
+  li: a(href="#about" alt="About") About
+  li: a(href="#contact" alt="Contact") Contact
+
+mixin top-bar
+  nav.top-bar.nav-desktop
+    .wrap
+      .top-bar-left
+        h3.site-logo David Felix
+      .top-bar-right
+        ul.menu.menu-desktop
+          li: a(href="#services" alt="Services") Services
+          li: a(href="#portfolio" alt="Portfolio") Portfolio
+          li: a(href="#about" alt="About") About
+          li: a(href="#contact" alt="Contact") Contact
+
+mixin footer
+  footer.footer#footer
+    .wrap.row.small-up-1.medium-up-3
+      .column
+        h4 Contact Info
+        hr
+        span Phone: +18005555555
+        span Email: acme@acmemade.com
+        span
+          | © David Felix
+          script.
+            document.write(new Date().getFullYear())
+          | . All Rights Reserved
+      .column
+        h4 Site Map
+        hr
+        a(href="#services" alt="Services") Services
+        a(href="#portfolio" alt="Portfolio") Portfolio
+        a(href="#about" alt="About") About
+        a(href="#contact" alt="Contact") Contact
+      .column
+        h4 Social Media
+        hr
+        a(href="https://github.com/df-a" alt="Github") Github
+        a(href="https://github.com/df-a" alt="Linked.in") Linked.in
+        a(href="https://twitter.com/dcfelix" alt="Twitter") Twitter
+        a(href="https://google.com/+davidfelixcw" alt="Google Plus") Google Plus
