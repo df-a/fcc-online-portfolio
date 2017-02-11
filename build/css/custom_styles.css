@@ -1,3 +1,26 @@
+/* HEADERS */
+/* HEADERS */
+/* HEADERS */
+section {
+  margin-bottom: 2em; }
+
+/* NAV-MAGELLAN */
+/* NAV-MAGELLAN */
+/* NAV-MAGELLAN */
+#sticky-magellan h4 {
+  display: inline;
+  color: #fff; }
+
+#sticky-magellan {
+  background-color: #F082D4;
+  font-size: 0.9em;
+  text-align: center;
+  padding: 0.1em;
+  line-height: 10px; }
+
+#sticky-magellan li {
+  display: inline-block; }
+
 /* GENERAL */
 /* GENERAL */
 /* GENERAL */
@@ -68,6 +91,9 @@ a.anchor {
 .nav-desktop a {
   display: inline-block; }
 
+ul.menu > li > a {
+  text-transform: uppercase; }
+
 .menu > li > a {
   display: inline-block;
   line-height: 80px;
@@ -76,6 +102,16 @@ a.anchor {
   color: white; }
 
 .menu > li > a:hover {
+  background-color: rgba(255, 255, 255, 0.1); }
+
+.menu.magellan > li > a {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  line-height: 20px;
+  padding: 10px 10px;
+  color: #767676; }
+
+.menu.magellan > li > a:hover {
   background-color: rgba(255, 255, 255, 0.1); }
 
 /* HERO */
@@ -104,7 +140,7 @@ a.anchor {
 /* FOOTER */
 footer {
   background-color: #767676;
-  padding: 80px 0 80px 0; }
+  padding: 20px 0 20px 0; }
 
 footer h4 {
   color: rgba(255, 255, 255, 0.8);

@@ -11,7 +11,7 @@
   <body>
     <!-- OFF CANVAS MENU & SITE MAIN CONTENT WRAPPERS-->
     <div class="off-canvas-wrapper">
-      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div class="off-canvas-wrapper-innerdata-sticky" data-off-canvas-wrapper>
         <!-- OFF CANVAS MENU-->
         <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
           <li><a href="#services" alt="Services">Services</a></li>
@@ -20,30 +20,30 @@
           <li><a href="#contact" alt="Contact">Contact</a></li>
         </div>
         <!-- SITE MAIN CONTENT-->
-        <div class="off-canvas-content data-sticky-container" data-off-canvas-content>
+        <div class="off-canvas-content" data-off-canvas-content>
           <div class="title-bar show-for-small-only">
-            <div class="title-bar-left data-sticky">
+            <div class="title-bar-left">
               <button class="menu-icon" type="button" data-open="offCanvas"></button><span class="title-bar-title">David Felix: Portfolio</span>
             </div>
           </div>
           <!-- DESKTOP NAVIGATION-->
-                    <nav class="top-bar nav-desktop" data-sticky-container>
-                      <div class="title-bar" data-sticky data-options="marginTop:-1;" style="width:100%">
-                        <div class="wrap">
-                          <div class="top-bar-left">
-                            <h3 class="site-logo">David Felix</h3>
-                          </div>
-                          <div class="top-bar-right">
-                            <ul class="menu menu-desktop">
-                              <li><a href="#services" alt="Services">Services</a></li>
-                              <li><a href="#portfolio" alt="Portfolio">Portfolio</a></li>
-                              <li><a href="#about" alt="About">About</a></li>
-                              <li><a href="#contact" alt="Contact">Contact</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </nav>
+          <nav class="top-bar nav-desktop" data-sticky-container="data-sticky-container">
+            <div class="title-bar" data-sticky="data-sticky" data-options="marginTop:-1;" style="width:100%">
+              <div class="wrap">
+                <div class="top-bar-left hide-for-small">
+                  <h3 class="site-logo">David Felix</h3>
+                </div>
+                <div class="top-bar-right">
+                  <ul class="menu menu-desktop">
+                    <li><a href="#services" alt="Services">Services</a></li>
+                    <li><a href="#portfolio" alt="Portfolio">Portfolio</a></li>
+                    <li><a href="#about" alt="About">About</a></li>
+                    <li><a href="#contact" alt="Contact">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
           <!-- HERO SECTION--><a class="anchor" id="services"></a>
           <section class="hero">
             <div class="wrap row">
@@ -55,10 +55,22 @@
             </div>
           </section>
           <!-- PORTFOLIO SECTION-->
+          <div data-sticky-container="data-sticky-container">
+            <div class="sticky" id="sticky-magellan" style="width:100%" data-sticky="data-sticky" data-margin-top="0" data-margin-bottom="0" data-top-anchor="services" data-btm-anchor="footer:bottom" data-sticky-on="small">
+              <nav class="sticky-mag" data-magellan="data-magellan">
+                <ul class="horizontal menu magellan show-for-small-only">
+                  <li><a href="#services" alt="Services">Services</a></li>
+                  <li><a href="#portfolio" alt="Portfolio">Portfolio</a></li>
+                  <li><a href="#about" alt="About">About</a></li>
+                  <li><a href="#contact" alt="Contact">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
           <!-- PORTFOLIO--><a class="anchor" id="portfolio"></a>
           <section class="portfolio">
             <div class="wrap row">
-              <h2>DF: Portfolio</h2>
+              <h2>Portfolio</h2>
               <hr>
               <article class="row">
                 <div class="small-12 column">
@@ -135,14 +147,19 @@
           <!-- ABOUT--><a class="anchor" id="about"></a>
           <section class="about">
             <div class="wrap row">
-              <h2>DF: About Me</h2>
+              <h2>About Me</h2>
               <hr>
+              <p>Writing “About Me” sections is hard. It’s hard because I can’t understand, now nor never, how you can condense a person down to a few paragraphs. But I’ll try my best.</p>
+              <p>I love the indoors and also the outdoors. I love riding on my mountain bike, playing video games, watching movies, working out, and sometimes even going to the club to have drinks and dance.</p>
+              <p>I also enjoy learning stuff. A day in which you have not discovered something new is a day wasted. In this regard, I know a hell of a lot of stuff. Obviously, I myself never noticed this but multiple people have told me this characteristic that I apparently posses.</p>
+              <p>Making stuff is hard. You have to be passionate in what you do to constantly strive for perfection. Once I am dedicated to a task, I will not rest until it is finished. Finito. Done AF. And then I will rest easy knowing that the goal has been accomplished. Constantly push yourself, as you are your only limit.</p>
+              <p>So yeah. My name is David Felix, and I make things better.</p>
             </div>
           </section>
           <!-- CONTACT--><a class="anchor" id="contact"></a>
           <section class="contact">
             <div class="wrap row">
-              <h2>DF: Contact</h2>
+              <h2>Contact</h2>
               <hr>
               <form>
                 <div class="row">
@@ -169,24 +186,24 @@
               </form>
             </div>
           </section>
-          <!-- FOOTER-->
-                    <footer class="footer" id="footer">
-                      <div class="wrap row small-up-1 medium-up-3">
-                        <div class="column">
-                          <h4>Contact Info</h4>
-                          <hr><span>Phone: +18005555555</span><span>Email: acme@acmemade.com</span><span>© David Felix
-                            <script>document.write(new Date().getFullYear())</script>. All Rights Reserved</span>
-                        </div>
-                        <div class="column">
-                          <h4>Site Map</h4>
-                          <hr><a href="#services" alt="Services">Services</a><a href="#portfolio" alt="Portfolio">Portfolio</a><a href="#about" alt="About">About</a><a href="#contact" alt="Contact">Contact</a>
-                        </div>
-                        <div class="column">
-                          <h4>Social Media</h4>
-                          <hr><a href="https://github.com/df-a" alt="Github">Github</a><a href="https://github.com/df-a" alt="Linked.in">Linked.in</a><a href="https://twitter.com/dcfelix" alt="Twitter">Twitter</a><a href="https://google.com/+davidfelixcw" alt="Google Plus">Google Plus</a>
-                        </div>
-                      </div>
-                    </footer>
+          <!-- FOOTER--><a class="anchor" id="footer"></a>
+          <footer class="footer">
+            <div class="wrap row small-up-1 medium-up-3">
+              <div class="column">
+                <h4>Contact Info</h4>
+                <hr/><span>Phone: +18005555555</span><span>Email: acme@acmemade.com</span><span>© David Felix
+                  <script>document.write(new Date().getFullYear())</script>. All Rights Reserved</span>
+              </div>
+              <div class="column">
+                <h4>Site Map</h4>
+                <hr/><a href="#services" alt="Services">Services</a><a href="#portfolio" alt="Portfolio">Portfolio</a><a href="#about" alt="About">About</a><a href="#contact" alt="Contact">Contact</a>
+              </div>
+              <div class="column">
+                <h4>Social Media</h4>
+                <hr/><a href="https://github.com/df-a" alt="Github">Github</a><a href="https://github.com/df-a" alt="Linked.in">Linked.in</a><a href="https://twitter.com/dcfelix" alt="Twitter">Twitter</a><a href="https://google.com/+davidfelixcw" alt="Google Plus">Google Plus</a>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
     </div>

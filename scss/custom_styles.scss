@@ -37,6 +37,38 @@ $foundation-palette: (
 }
 
 
+/* HEADERS */
+/* HEADERS */
+/* HEADERS */
+
+section {
+  margin-bottom: 2em;
+}
+
+
+/* NAV-MAGELLAN */
+/* NAV-MAGELLAN */
+/* NAV-MAGELLAN */
+
+#sticky-magellan h4 {
+  display: inline;
+  color: #fff;
+}
+
+#sticky-magellan {
+  background-color: color(sexy);
+  font-size: 0.9em;
+  text-align: center;
+  padding: 0.1em;
+  line-height: 10px;
+}
+
+#sticky-magellan li {
+  display: inline-block;
+}
+
+
+
 /* GENERAL */
 /* GENERAL */
 /* GENERAL */
@@ -127,6 +159,10 @@ a.anchor {
   display: inline-block;
 }
 
+ul.menu > li > a {
+  text-transform: uppercase;
+}
+
 .menu > li > a {
   display: inline-block;
   line-height: 80px;
@@ -135,9 +171,26 @@ a.anchor {
   color: white;
 }
 
+
 .menu > li > a:hover {
   background-color: rgba(255,255,255,0.1);
 }
+
+
+.menu.magellan > li > a {
+  // display: inline-block;
+  display: inline-grid;
+  line-height: 20px;
+  padding: 10px 10px;
+  // text-transform: uppercase;
+  color: color(secondary);
+}
+
+
+.menu.magellan > li > a:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
 
 /* HERO */
 /* HERO */
@@ -170,7 +223,7 @@ a.anchor {
 
 footer {
   background-color: color(secondary);
-  padding: 80px 0 80px 0;
+  padding: 20px 0 20px 0;
 }
 
 footer h4 {

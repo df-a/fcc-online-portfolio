@@ -9,7 +9,7 @@ mixin top-bar
   nav.top-bar.nav-desktop(data-sticky-container)
     .title-bar(data-sticky data-options="marginTop:-1;" style="width:100%")
       .wrap
-        .top-bar-left
+        .top-bar-left.hide-for-small
           h3.site-logo David Felix
         .top-bar-right
           ul.menu.menu-desktop
@@ -19,7 +19,7 @@ mixin top-bar
             li: a(href="#contact" alt="Contact") Contact
 
 mixin footer
-  footer.footer#footer
+  footer.footer
     .wrap.row.small-up-1.medium-up-3
       .column
         h4 Contact Info
@@ -45,3 +45,17 @@ mixin footer
         a(href="https://github.com/df-a" alt="Linked.in") Linked.in
         a(href="https://twitter.com/dcfelix" alt="Twitter") Twitter
         a(href="https://google.com/+davidfelixcw" alt="Google Plus") Google Plus
+
+mixin magellan
+  div(data-sticky-container)
+    #sticky-magellan.sticky(style='width:100%;' data-sticky data-margin-top='0' data-margin-bottom='0' data-top-anchor='services', data-btm-anchor='footer:bottom', data-sticky-on='small')
+      nav.sticky-mag(data-magellan)
+        ul.horizontal.menu.magellan.show-for-small-only
+          li
+            a(href="#services" alt="Services") Services
+          li
+            a(href="#portfolio" alt="Portfolio") Portfolio
+          li
+            a(href="#about" alt="About") About
+          li
+            a(href="#contact" alt="Contact") Contact

@@ -7,21 +7,45 @@ html(class="no-js" lang="en")
   body
 
     // OFF CANVAS MENU & SITE MAIN CONTENT WRAPPERS
-
     .off-canvas-wrapper
-      .off-canvas-wrapper-inner(data-off-canvas-wrapper)
+      .off-canvas-wrapper-innerdata-sticky(data-off-canvas-wrapper)
 
         // OFF CANVAS MENU
         .off-canvas.position-left(id="offCanvas" data-off-canvas)
           +off-canvas
         // SITE MAIN CONTENT
-        .off-canvas-content.data-sticky-container(data-off-canvas-content)
+        .off-canvas-content(data-off-canvas-content)
           //- button.button(type="button" data-toggle="offCanvas") Open Menu
           .title-bar.show-for-small-only
-            .title-bar-left.data-sticky
+            .title-bar-left
               button.menu-icon(type="button" data-open="offCanvas")
               span.title-bar-title David Felix: Portfolio
-          include main-content.pug
+
+          //- include main-content
+          // DESKTOP NAVIGATION
+          +top-bar
+
+          // HERO SECTION
+          include pug/hero
+
+          // PORTFOLIO SECTION
+          +magellan
+          include pug/portfolio
+
+          // ABOUT
+          include pug/about
+
+          // CONTACT
+          a.anchor#contact
+          section.contact
+            .wrap.row
+              h2 Contact
+              hr
+              include pug/contact
+
+          // FOOTER
+          a.anchor#footer
+          +footer
 
   script(src="bower_components/jquery/dist/jquery.js")
   script(src="bower_components/what-input/dist/what-input.js")
